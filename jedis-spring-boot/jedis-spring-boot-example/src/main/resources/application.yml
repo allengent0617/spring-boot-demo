@@ -1,0 +1,5 @@
+spring:
+  jedis:
+    host: localhost
+    port: 2400
+    timeout: 10
