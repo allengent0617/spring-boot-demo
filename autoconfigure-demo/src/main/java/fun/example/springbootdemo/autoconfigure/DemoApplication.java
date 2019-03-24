@@ -8,12 +8,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.sql.SQLOutput;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
 @SpringBootApplication
-public class SpringbootdemoApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
         System.setProperty("dbType", "MYSQL");
-        SpringApplication.run(SpringbootdemoApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 
     @Bean
